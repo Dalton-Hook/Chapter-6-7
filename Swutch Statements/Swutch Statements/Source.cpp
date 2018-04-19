@@ -15,6 +15,8 @@ int main()
 	switch (bookScanID)
 	{
 	case 1:
+		level1();
+		break;
 		bookOwner = "Dalton";
 		break;
 	case 277346:
