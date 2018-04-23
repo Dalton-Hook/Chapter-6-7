@@ -1,29 +1,94 @@
+	#include <iostream>
+	#include <time.h>
+	#include <stdlib.h>
+	#include <stdio.h>
+	#include <random>
+	int main()
+	{
+		int numberChoice;
+		int secret;
+		int count = 0;
+	int easyLevel1;
+	int mediumLevel2;
+	int hardLevel3;
+	srand(time(NULL));
+	secret = rand() % 10 + 1;
+	//easy
+	switch (easyLevel1)
+	{
+	case 1:
 
-#include <iostream>
-#include <string>
-int main()
-{
+		break;
+		easyLevel1;
 
-		int Game = 0;
-		double Easy, Medium, Hard;
-		std::string bookOwner;
-		std::cout << "PLease neter what level you wish to play Easy, Medium or Hard" << std::endl;
-		std::cin >> Game;
+		do{
+			std::cout << "Please pick a number between 1 - 10" << std::endl;
+			std::cin >> numberChoice;
+			if (numberChoice > secret)
+			{
+				std::cout << "The number you chose is to high" << std::endl;
+				count = count + 1;
 
-		switch (Game)
-		{
-		case Easy:
-			Game();
-			break;
-		}
-		if (bookOwner == "Invalid")
-		{
-			std::cout << "Invalid";
-		}
+			}
+			else if (numberChoice < secret)
+			{
+				std::cout << "The number you have chose is to low!, guess again loser" << std::endl;
+				count = count + 1;
+			}
+		} while (numberChoice != secret);
+		std::cout << "Congrats! " << std::endl;
+		std::cout << "It took you " << count << " tries to get it correct." << std::endl;
+	}
+	switch (mediumLevel2)
+	{
+	case 2:
 
-		else std::cout << bookOwner << std::endl;
-		std::cout << bookOwner;
+		break;
+		mediumLevel2;
 
+		do{
+			std::cout << "Please pick a number between 1 - 10" << std::endl;
+			std::cin >> numberChoice;
+			if (numberChoice > secret)
+			{
+				std::cout << "The number you chose is to high" << std::endl;
+				count = count + 1;
+
+			}
+			else if (numberChoice < secret)
+			{
+				std::cout << "The number you have chose is to low!, guess again loser" << std::endl;
+				count = count + 1;
+			}
+		} while (numberChoice != secret);
+		std::cout << "Congrats! " << std::endl;
+		std::cout << "It took you " << count << " tries to get it correct." << std::endl;
+	}
+	switch (hardLevel3)
+	{
+	case 3:
+
+		break;
+		hardLevel3;
+
+		do{
+			std::cout << "Please pick a number between 1 - 10" << std::endl;
+			std::cin >> numberChoice;
+			if (numberChoice > secret)
+			{
+				std::cout << "The number you chose is to high" << std::endl;
+				count = count + 1;
+
+			}
+			else if (numberChoice < secret)
+			{
+				std::cout << "The number you have chose is to low!, guess again loser" << std::endl;
+				count = count + 1;
+			}
+		} while (numberChoice != secret);
+		std::cout << "Congrats! " << std::endl;
+		std::cout << "It took you " << count << " tries to get it correct." << std::endl;
+	}
 	system("pause");
 	return 0;
 }
