@@ -28,8 +28,8 @@ int main()
 
 
 
-	cout << "Wlecome to my computer guesss game";
-	cout << "Where the computer guesses the number the human put in!";
+	cout << "Welcome to my computer guesss game ";
+	cout << "Where the computer guesses the number!";
 
 	cout << "Please enter your number (between 1 & 100): ";
 	cin >> toGuess;
@@ -101,9 +101,8 @@ int main()
 
 		else if (status == CORRECT)
 		{
-			cout << "Computer Figurd it out in!\n";
-			cout << "The Number REALLY was " << guess << "\n";
 			cout << "It took mark zuckerburg the robot " << tries << " tries!\n";
+			cout << "The Number REALLY was " << guess << "\n";
 			cout << "Thank you  for playing!" << endl;
 		}
 
